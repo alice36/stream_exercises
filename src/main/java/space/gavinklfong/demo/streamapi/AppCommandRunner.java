@@ -27,16 +27,13 @@ public class AppCommandRunner implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		log.info("Customers:");
-		customerRepos.findAll()
-				.forEach(c -> log.info(c.toString()));
+		customerRepos.findAll().forEach(c -> log.info(c.toString()));
 
 		log.info("Orders:");
-		orderRepos.findAll()
-				.forEach(o -> log.info(o.toString()));
+		orderRepos.findAll().forEach(o -> log.info(o.toString()));
 
 		log.info("Products:");
-		productRepos.findAll()
-				.forEach(p -> log.info(p.toString()));
+		productRepos.findAll().forEach(p -> log.info(p.toString()));
 	}
 
 }
